@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Understanding the Impacts of China-US Trade War</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <link rel="stylesheet" href="css/aos.css">
+
+        <link rel="stylesheet" href="css/ionicons.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">China-US Trade War</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
+                </button>
+
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#datastories" class="nav-link">Data Stories</a>
+                        </li>
+                        <li class="nav-item active"><a href="#conclusion" class="nav-link">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+        <section class="ftco-cover" id="section-home" style="background-image: url(images/spine.jpg)" data-aos="fade"  data-stellar-background-ratio="0.5">
+            <div class="bg-image" style="background-color: rgba(14,14,14,0.4)">
+                <div class="container">
+                    <div class="row align-items-center ftco-vh-100" >
+                        <div class="col-md-12">
+                            <h2 class="h5 ftco-heading mb-3" data-aos="fade-up" data-aos-delay="500" style="color:floralwhite; opacity: 1; font-size: 35px;" >lovela data science</h2>
+
+                            <h2 class="h5 ftco-heading" data-aos="fade-up"  data-aos-delay="600" style="color:floralwhite; opacity: 1">Understanding the Impacts of China-US Trade War</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END section -->
+
+        
+        <section class="ftco-section" id="section-intro">
+            <div class="container">   
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up">
+                        <p class="mb-4" style=" vertical-align: middle; color:rgb(134, 131, 131); margin-left:15em; margin-right:15em;">
+                            <I>"The United States and China have a long history of economic rivalry. 
+                            But since the end of 2017, the Trump administration started to challenge China’s business activities. 
+                            The U.S. began setting tariffs and other trade barriers on China 
+                            to force it to make changes to what the U.S. says are unfair trade practices and intellectual property theft.
+                            All these actions have spiraled into a full-blown economic and trade war. </I>
+                        </p> 
+                        <p class="mb-4" style=" vertical-align: middle; color:rgb(134, 131, 131); margin-left:15em; margin-right:15em;">
+                            <I>Though the trade war reached its end on January 15, 2020, 
+                            where the two sides reached a phase one agreement, 
+                            tensions between the United States and China persists 
+                            and is negatively impacting not just these two countries but many others..."</I>
+                        </p>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up">
+                        <p class="mb-4">
+                            Since the paper introduces interrupted time series (ITS) analysis as a practical method for event impact evaluation, we propose to study if we can apply ITS analysis to a different scenario: 
+                        </p>
+                    </div>
+                    <div class="col-md-12  mb-5" data-aos="fade-up">
+                        <div class="media block-6">
+                            <div class="media-body">
+                                <p style="color: #000000" >
+                                    The <span style="color:rgb(170, 25, 25)">China</span>-<span style="color:rgb(30, 70, 145)">United States</span> Trade War
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <h1 class="ftco-heading heading-thin">How we achieved</h1>
+                        <p>
+                            To do so, we collect several different types of datasets (e.g., U.S. Trade in Goods with China, US foreign trade with product details) from WTO, OECD, the United States and China’s official website. 
+                            (You can access our data source by clicking the pictures below)
+                        </p>
+                        <div class="col-md-6 panel-body" style="width:800px; margin:0 auto;">
+                            <a href="https://data.wto.org/">
+                                <img src="images/wto_data.png"  alt="" style="width:100%">
+                             </a>
+                             <a href="https://stats.oecd.org/Index.aspx?DataSetCode=MEI_TRD#">
+                                <img src="images/oecd_data.png"  alt="" style="width:100%">
+                             </a>
+                             <a href="https://www.census.gov/foreign-trade/balance/c5700.html">
+                                <img src="images/us_data.png"  alt="" style="width:100%">
+                             </a>
+                             <a href="http://www.customs.gov.cn/customs/302249/302274/302277/3227050/index.html">
+                                <img src="images/china_data.png" alt="" style="width:100%">
+                             </a>
+                        </div>
+                        <p>    
+                            We then use ITS analysis on these datasets and see if there exists a significant impact on the China-US trade. 
+                            Given that the U.S. took actions to apply tariffs on Chinese goods on <b>March 2018</b> for the first time, we chose it as the trade war event intervention in our analysis.
+                            Moreover, we try to extend the ITS analysis method to better interpret multiple objects of study and other factors, including different business partners, industries, and seasonality effect.
+                            The visualization of analysis will allow us to understand the economic outcomes easily. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12  mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <h1 class="ftco-heading heading-thin">Our Goal</h1>
+                        <p>Our main goal is to find out <b>How does the trade war affect the bilateral trade (i.e., exports, imports) between China and the US？ </b>
+                        </p>
+                        <p>we are also interested in investigating further into other aspects of the trade war: 
+                        </p>
+                        <ul class="dashed">
+                            <li><b>The resulting change in the trade of their business partners such as the European Union </b></li>
+                            <li><b>Different levels of impacts in various industries</b></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- END counter -->
+                
+                <div class="row">
+                    <div class="col-md-12 mb-5" data-aos="fade-up">
+                      <p>All these results would provide us with a broader and deeper understanding of the impacts of the trade war, and we would try to interpret them from different perspectives.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END section -->
+        
+        
+        <section id='datastories' class="ftco-cover" style="background-image: url(images/spine2.jpg)" data-aos="fade"  data-stellar-background-ratio="0.5">
+            <div class="bg-image" style="background-color: rgba(14,14,14,0.4)">
+                <div class="container">
+                    <div class="row align-items-center ftco-vh-100" >
+                        <div class="col-md-12">
+                            <h1 class="ftco-heading heading-thin mb-5" data-aos="fade-up" data-aos-delay="100" style="color:ghostwhite; opacity: 1">
+                                Data Stories begins
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END section -->
+        
+        
+        <section class="ftco-section">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="0">
+                        <h1 class="ftco-heading heading-thin">How does the trade war affect the China-US bilateral trade?</h1>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4  mb-5" data-aos="fade-up" data-aos-delay="0" style="margin-top: 3.7%">
+                        <p>We first look at the data from the United States Census website by plotting the trend of the bilateral trade, from 2016 to 2020.</p>
+                        <p>Given the plot, we can observe the facts:</p>
+                        <ul>
+                            <li>US imports from China are much higher than its exports. The <b>US trade deficit</b> in bilateral trade is approximately 30 billion dollars per month.</li>
+                            <li>U.S. imports from China fluctuate greatly each month and show a certain degree of <b>cyclical characteristics</b>.</li>
+                            <li>In 2020, monthly trade volume has changed greatly.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 col-lg-8" data-aos="fade-up" data-aos-delay="0">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/bilateral_overview.html" height="500" width="100%"></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">Trade war outbreak analysis: Data Preprocesing</h2>
+                        <p>
+                            Firstly, according to the observation above, we infer that <b>COVID-19 pandemic</b> has greatly impacted the bilateral trade. 
+                            Also, in 2020 Jan 15, U.S. President Donald Trump and China's Vice Premier Liu He signed the US–China Phase One trade deal in Washington DC. 
+                            This agreement marked a phased settlement of the trade war.
+                        </p>
+                        <p>
+                            According to the two factors above, we think that the trade amount in 2020 do not help to investigate the trade war's impacts because it's hard to control the variable. 
+                            The pandemic may be the cause of sharp decrease in US imports but the agreement could lead to the following increasing tread. 
+                            Hence, we focus our research on year <b>2016-2019</b>, which is also the main period of the trade war. 
+                        </p>
+                        <p>
+                            Secondly, we carry out <b>seasonality decomposition</b> to analyze the cyclical characteristics in the trade amount.
+                            The following decomposition results indicate the significant seasonality in the trade data, especially in imports.
+                            Thus, in the final trade war outbreak analysis, we remove the seasonality to better analyze the real impact of the trade war intervention.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-6">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/imports_seasonality.html" height="500" width="100%"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/exports_seasonality.html" height="500" width="100%"></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">Trade war outbreak analysis: Segmented Regression Analysis</h2>
+                        <p>
+                            Finally, we can implement segmented regression analysis without considering other factors that may affect our interpretations.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-6">
+                        <img src="images/us_to_china.png" alt="" class =“right” style="width:100%">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/china_to_us.png" alt="" style="width:100%">
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100" style="margin-top: 2.5%">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            First of all, from the regression results, we can see that the trade war has statistically significant impact on U.S. exports to China, 
+                            both immediately and in the long term.
+                        </p>
+                        <p>
+                            Before the trade war, 
+                            the exports stably increase with the coefficient of time_feature is around 129.18. 
+                            However, the intervetion's coefficient (-1382.35) and postslope's coefficient (-213.64), 
+                            indicating that <b>the intervention not only immediately reduced the export value, 
+                            but also showed a downward trend in the next two years.</b>
+                        </p>
+                        <p>
+                            On the other hand, 
+                            the result on U.S. imports from China has a certain degree of difference with the exports. 
+                            We can conclude that <b>the imports from China has both higher increasing trend before the trade war</b> (with coefficient 304.95) 
+                            and <b>more severe downward trend </b>(with coefficient -905.92) <b>after the trade war. </b>
+                            From this perspective, Chinese products are more severely impacted by the trade war.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">Trade war outbreak analysis: With global trade as comparator group</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4  mb-5" data-aos="fade-up" data-aos-delay="0" style="margin-top: 3.7%">
+                        <p>To strengthen the analysis on the impact of trade-war outbreak, we select Monthly International Merchandise Trade as a comparator group. This index reflects the monthly <b>global trade amount </b>.</p>
+                        <p>From the trend plot, we observe that the increasing trend was also slowed down in 2018 and gradually decrease in the next years. Since the global trend <b>shares kind of similarity</b> with China-US bilateral trade trend, we cannot directly conclude that trade-war leads to the decline in rather than global economic recession.</p>
+                    </div>
+                    <div class="col-md-8 col-lg-8" data-aos="fade-up" data-aos-delay="0">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/global_overview.html" height="500" width="100%"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            Given our regression analysis results, the global trade did not immediately experience the negative effects of the trade war.
+                            However, the <b> long-term negative effect </b> exists in the regression results, which is the similar in China-US Bilateral trade.
+                        </p>
+                        <p>
+                            Does this overturn our previous conclusion in China-US Trade Trend?
+                            Not exactly, because the <b> long-term effect is less noticeable</b> than the impact discovered China-US trade relationships, which could be justified in the coefficient and the following plots.
+                        </p>
+                        <p>
+                            Let's now see the plot below that can better reflect the difference in both the immediate/long-term impact on <span style="color:rgb(170, 25, 25)">China-US Bilateral Trade</span> and the <span style="color:rgb(30, 70, 145)">International Market</span>:
+                        </p>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-6">
+                        <img src="images/global_import.png" alt="" class =“right” style="width:100%">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/global_export.png" alt="" style="width:100%">
+                    </div>
+                </div>
+                <div class="row"><div class="col-md-12 col-lg-12 mb-5"></div></div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            Here we can draw some conclusions for the first question, trade war effects on the bilateral trade:
+                        </p>
+                        <p>
+                            Though the global economy is in a slump started from the year 2018, 
+                            <b>the impact of the U.S.- China trade war on their bilateral trade is much greater</b> than the impact of the global economic downturn.
+                            However, is it the trade war between the U.S. and China that cause the <i>global economic downturns</i>
+                            or the rise in <i>trade protectionism</i> in this downturn leads to the trade war outbreak?
+                            <b>The real causality is difficult to concluded by simply applying segmented regression analysis. </b>
+                        </p>
+                        <p>
+                            Despite the limitation of segmented regression analysis, we can still observe some interesting phenomenon from it:
+                        </p>
+                        <p>
+                            <b>There is a time delay in the immediate impact on Chinese exports to the US </b>
+                            (the intervention increases rather than decreases, but then plummets after a few months) 
+                            and <b>the long-term impact is more significant than US exports to Chinese </b>
+                            since the |postslope's coefficient| is roughly three times more than |preslope's coefficient| in Chinese exports to the US,
+                            but the |postslope's coefficient| in US exports to Chinese is only two times more than |preslope's coefficient|.
+                        </p>
+                        <p>
+                            Although the U.S. presents more severe bilateral deficit in the trade with China,
+                            if we consider the imports and exports respectively, 
+                            <b>China loses more in the trade war </b>
+                            because the difference of China's exports between pre-war and post-war reduce more than US's exports,
+                            indicating a greater loss.
+                        </p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="0">
+                        <h1 class="ftco-heading heading-thin">What’s the change in the trade amount of China and the US with their primary business partners?</h1>
+                     </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            Let's focus on the next question.
+                        </p>
+                        <p>
+                            Would China-US Trade War influence the trade with their primary business partners?
+                        </p>
+                        <p>
+                            To understand US and China primary business partners, we fisrt give a look at US and China top business trade partners by using the data from the United States Census website and China General Administration of Customs website.
+                            Here we remove the China-US trade as we want to focus on the impact on other business partners. Then, We aggregate the trade amount for each business partner and then create three leaderboards on import, export, and total trade amount.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  mb-5" data-aos="fade-up" data-aos-delay="100" style="text-align:center">
+                        <button id="button2" onclick="showUS()">U.S. Business Partners Leaderboard</button>
+                        <button id="button3" onclick="showChina()">China Business Partners Leaderboard</button>
+                    </div>
+                    <div id="genplot">
+                        <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <img src = "images/us_trade_partner.png" alt="" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            From the above plots, we can easily learn the US/China primary trade partners.  
+                        </p>
+                        <p>
+                            As we can see from the U.S. leaderboard, <b>Canada, Mexico and Japan</b> are the top 3 trade partners with the US in import partners, export partners and total trade amoount partners. 
+                            On the other hand, <b>Japan, Hong Kong and South Korea</b> are the top 3 total trade amoount partners with China. 
+                            Besides, most of the top10 business partners in this three leaderboard are the same but in different rankings. 
+                        </p>
+                        <p>
+                            We then decide to look into top 10 import partners and top 10 export partners respectively by applying segmented regression analysis.
+                        </p>
+                         
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">Segmented Regression Analysis on U.S./China top 10 business partners</h2>
+                        <p>
+                            Similarly, just like the trade outbreak analysis, we focus our research on year <b>2016-2019</b>, which is also the main period of the trade war.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4  mb-5" data-aos="fade-up" data-aos-delay="0" style="margin-top: 3.7%">
+                        <p>We first look at the U.S. trade with its business partners.</p>
+                        <p>
+                            Given the plot, we can observe that for most of the import/export partners, the total trade amount increased when the time trade war started. 
+                            Also, for most of the U.S. import partner, <b>the overall total trade amount in post-trend are higher than pre-trend.</b>
+                        </p>
+                        
+                    </div>
+                    <div class="col-md-8 col-lg-8" data-aos="fade-up" data-aos-delay="0" >
+                        <p><b>ITS results for U.S. business partners</b></p>
+                        <select id="sel1" onchange="giveSelection(this.value)">
+                            <option value="i" selected>Import Partner</option>
+                            <option value="e">Export Partner</option>
+                          </select>
+                        <select id="sel2" onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
+                            <option data-option="i" value="images/us_import_Canada.png" selected>Canada</option>
+                            <option data-option="i" value="images/us_import_France.png">France</option>
+                            <option data-option="i" value="images/us_import_Germany.png">Germany</option>
+                            <option data-option="i" value="images/us_import_Italy.png">Italy</option>
+                            <option data-option="i" value="images/us_import_Japan.png">Japan</option>
+                            <option data-option="i" value="images/us_import_Korea, South.png">South Korea</option>
+                            <option data-option="i" value="images/us_import_Malaysia.png">Malaysia</option>
+                            <option data-option="i" value="images/us_import_Mexico.png">Mexico</option>
+                            <option data-option="i" value="images/us_import_Taiwan.png">Taiwan</option>
+                            <option data-option="i" value="images/us_import_United Kingdom.png">UK</option>
+                            <option data-option="e" value="images/us_export_Brazil.png" >Brazil</option>
+                            <option data-option="e" value="images/us_export_Canada.png">Canada</option>
+                            <option data-option="e" value="images/us_export_France.png">France</option>
+                            <option data-option="e" value="images/us_export_Germany.png">Germany</option>
+                            <option data-option="e" value="images/us_export_Japan.png">Japan</option>
+                            <option data-option="e" value="images/us_export_Korea, South.png">South Korea</option>
+                            <option data-option="e" value="images/us_export_Mexico.png">Mexico</option>
+                            <option data-option="e" value="images/us_export_Netherlands.png">Netherlands</option>
+                            <option data-option="e" value="images/us_export_Taiwan.png">Taiwan</option>
+                            <option data-option="e" value="images/us_export_United Kingdom.png">UK</option>
+                        </select>
+                        <div>
+                            <img style='height: 100%; width: 100%; object-fit: contain' id="imageToSwap" class="profile" src="images/us_import_Canada.png">
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-lg-8" data-aos="fade-up" data-aos-delay="0" >
+                        <p><b>ITS results for China business partners</b></p>
+                        <select id="sel3" onchange="giveSelection2(this.value)">
+                            <option value="i" selected>Import Partner</option>
+                            <option value="e">Export Partner</option>
+                          </select>
+                        <select id="sel4" onchange="$('#imageToSwap2').attr('src', this.options[this.selectedIndex].value);">
+                            <option data-option="i" value="images/china_import_Australia.png" selected>Australia</option>
+                            <option data-option="i" value="images/china_import_Brazil.png">Brazil</option>
+                            <option data-option="i" value="images/china_import_China Taiwan.png">Taiwan</option>
+                            <option data-option="i" value="images/china_import_Germany.png">Germany</option>
+                            <option data-option="i" value="images/china_import_Japan.png">Japan</option>
+                            <option data-option="i" value="images/china_import_Korea,Rep..png">South Korea</option>
+                            <option data-option="i" value="images/china_import_Malaysia.png">Malaysia</option>
+                            <option data-option="i" value="images/china_import_Russian Federation.png">Russian</option>
+                            <option data-option="i" value="images/china_import_Thailand.png">Thailand</option>
+                            <option data-option="i" value="images/china_import_Viet Nam.png">Viet Nam</option>
+                            <option data-option="e" value="images/china_export_China Hong Kong.png" >HK</option>
+                            <option data-option="e" value="images/china_export_China Taiwan.png">Taiwan</option>
+                            <option data-option="e" value="images/china_export_Germany.png">Germany</option>
+                            <option data-option="e" value="images/china_export_India.png">India</option>
+                            <option data-option="e" value="images/china_export_Japan.png">Japan</option>
+                            <option data-option="e" value="images/china_export_Korea,Rep..png">South Korea</option>
+                            <option data-option="e" value="images/china_export_Netherlands.png">Netherlands</option>
+                            <option data-option="e" value="images/china_export_Singapore.png">Singapore</option>
+                            <option data-option="e" value="images/china_export_United Kingdom.png">UK</option>
+                            <option data-option="e" value="images/china_export_Viet Nam.png">Viet Nam</option>
+                        </select>
+                        <div>
+                            <img style='height: 100%; width: 100%; object-fit: contain' id="imageToSwap2" class="profile" src="images/china_import_Australia.png">
+                        </div>
+
+                    </div>
+                    <div class="col-md-4  mb-5" data-aos="fade-up" data-aos-delay="0" style="margin-top: 3.7%">
+                        <p>Then we turn to China's trade with its business partners.</p>
+                        <p>
+                            From the import ITS plots, <b>South Korea, Brazil, Japan and Germany </b>have seen their total imports to China decline over time after the trade war. 
+                            The rest of the world's imports have not changed much. 
+                            On the other hand, we can see that exports from China to other places are not affected much by the trade war, 
+                            except for India and Germany, where the export trade amount increased at the time of the incident but then declined. 
+                            <b>For all of China's export partners, the overall trade amount of exports was greater than before the trade war.</b> </p>
+                        
+                    </div>   
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            So, how can we know wich business partner has been affected by trade war the most? 
+                            And which business partner has little impact? 
+                            It seems hard to tell the answer straight away by looking through too many plots at the same time.
+                        </p>
+                        <p>
+                            Thus, to get a deeper look on impacts between different business partners, 
+                            we decide to focus on the difference between pre-trend and pos-trend trade amount on each US trade partners 
+                            by using the slope coefficient provided from segmented regression analysis report.
+                        </p> 
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            Let's start to see who gets more impact!
+                        </p>
+                        <div class="col-md-12  mb-5" data-aos="fade-up" data-aos-delay="100" style="text-align:center">
+                            <button id="button2" onclick="USimpact()">Impact on US trade partners</button>
+                            <button id="button3" onclick="CHimpact()">Impact on China trade partners</button>
+                        </div>
+                        <div id="impactplot">
+                            <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                                <img src = "images/us_impact.png" alt="" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            From the above plot, we can easily view the trade war impact on different business partners. 
+                        </p>
+                        <p>
+                            For US trade partners, <b>the trade war has more positive impact(impact>1.5) on its import partners: South Korea and Taiwan</b>, 
+                            and with slightly positive/negative impact on other business partners. 
+                            On the other side, most of the US export partners has small negative impacts.
+                            By compared to other trade partners, <b>Mexico and Canada gain more negative impacts</b>(impact>1.5) on their trade amount.
+                        </p>
+                        <p>
+                            For China import partners, <b>South Korea</b> has more negative impact and little positive/negative impact on other trade partners. 
+                            It is interesting to see that most of China's import trade partners have negative impacts. 
+                            Besides, as being China's export partners, 
+                            <b>United Kingdom and Singapore gains more influence from the trade war</b>. 
+                            The United Kingdom has more than 15 positive impact and Singapore has more than 5 positive impact. 
+                            For the rest of the export partners, they receive relatively small negative impact.
+                        </p>
+                        <p>
+                            To sum up, 
+                            the trade war between US and China <b>seems to not have a significant import/export trade amount impact 
+                            on most of their primary business partners</b>. 
+                            Being as the main two trade partners in the world, 
+                            it is less likely for other business partners to reduce their trade with the US and China.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">A whole picture of US & China trade with world business partners</h2>
+                        <p>
+                            In order to better understand the trade relationship between other countries and the US and China, 
+                            we have drawn a world map here, representing from 1996 to 2018, 
+                            whether each country has more total trade amount with the US or China. 
+                            (Color Blue infers that the business partners has more trade with U.S.and Red means it has more trade with China)
+                        </p>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-12 col-lg-12">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/world_map.html" height="600" width="100%"></iframe>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            We can see that from the beginning, the toal trade amount with U.S. was greater than China's in almost every region. 
+                            However, China rise rapidly during the next few years and become one of the top economies in the world today.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="0">
+                        <h1 class="ftco-heading heading-thin">Which industry/sector has undergone the most severe decline in the trade war?</h1>
+                     </div>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-6">
+                        <img src="images/panda.png" alt="" class =“right” style="width:100%">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/eagle.png" alt="" style="width:100%">
+                    </div>
+                </div>
+                
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-12 col-lg-12">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/exports.html" height="600" width="100%"></iframe>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-12 col-lg-12">
+                        <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/imports.html" height="600" width="100%"></iframe>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <p>
+                            <b>Trend: </b> We could see approximately that the overall trend(sum over all catogories) is consistent with the result we got from before.
+                        </p>
+                        <p>
+                            <b>Proportion of each industry: </b> For both imports and exports parts, among all the different sectors, the category 
+                            <b>Machinery and transport equipment</b> has contributed the largest part. 
+                        </p>
+                        <p>
+                            <b>For US imports to China: </b>
+                        </p>
+                        <p>
+                                The goods of kind <b>Crude Materials, Inedible, Exept Fuels</b> is at the second place. 
+                                Especially, it has an obvious seasonal pattern of approximately 1 year and the peak always appears in October. 
+                                However, we could see that the peak does not happen again in October 2019, after the trade war begins. 
+                                The goods <b>Chemicals and related products</b> , <b>Miscellaneous and manufactured articles</b> 
+                                and <b>Mineral Fuels, Lubricants and Related Materials</b>follow, etc...
+                        </p>
+                        <p>
+                            <b>For US exports from China: </b> 
+                        </p>
+                        <p>
+                                The second most goods are <b>Miscellaneous and manufactured articles</b> instead. 
+                                The goods <b>Miscellaneous and manufactured articles</b> and <b>Manufactured Goods Classified Chiefly by Material</b>follow...
+                         </p>
+                         <p>
+                                And we could also observe a 1-year seasonal pattern whose peak is also always in around October 
+                                for the goods <b>Machinery and transport equipment</b>
+                         </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="ftco-heading heading-thin">Segmented Regression Analysis on U.S Imports/Exports of different industries</h2>
+                        <p>
+                            We choose the SIC(Standard Industrial Classification) to classify the goods into 10 categories. And analysis them using ITS method respectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4  mb-5" data-aos="fade-up" data-aos-delay="0" style="margin-top: 3.7%">
+                        <p><i>Choose imports or exports for any industry</i></p>
+                        <p>
+                            The ITS results we got shown besides are the plots after reducing the noise as most as possible, by the method such as removing out the seasonality or removing outliers.
+                        </p>
+                        <p>
+                            Special attention to the exports of catogory <b>Beverage and Tobacco</b> Before the trade war began, it has got a seasonal pattern and it reaches a peak at a certain time every year.
+                            But after the trade war began, the exports didn't reach a peak again at the same time in the next year. We may assume that 
+                            the trade war still has had some impact on the market of Beverage and Tabacco. But Whether or not this is truly related to trade war
+                            and the reasons behind may become clear if have a longer period after trade war to study without the infection of Pandemic can be studied.
+                            Other categories such as <b>Crude Materials, Inedibles, Except Fuels</b> and <b> Animal and vegetable Oils, Fats and Waxes</b> have similar changes as well.
+                        </p>
+                        <p>
+                            For the U.S imports from China, most of the catogories have been negatively affected in a long run, which can be observed by the obvious change of slope after 2018-03.
+                        </p>
+                        
+                    </div>
+
+                    <div class="col-md-8 col-lg-8" data-aos="fade-up" data-aos-delay="0" >
+                        <p><b>ITS results for trades in different industries</b></p>
+                        <select id="sel5" onchange="giveSelection3(this.value)">
+                            <option value="i" selected>Imports</option>
+                            <option value="e">Exports</option>
+                          </select>
+                        <select id="sel6" onchange="$('#imageToSwap3').attr('src', this.options[this.selectedIndex].value);">
+                            <option data-option="i" value="images/ITS_im_1.png" selected>Food and Live Animals</option>
+                            <option data-option="i" value="images/ITS_im_2.png">Beverage and Tobacco</option>
+                            <option data-option="i" value="images/ITS_im_3.png">Crude Materials, Inedibles, Except Fuels</option>
+                            <option data-option="i" value="images/ITS_im_4.png">Mineral Fuels, Lubricants and Other related Materials</option>
+                            <option data-option="i" value="images/ITS_im_5.png">Animal and vegetable Oils, Fats and Waxes</option>
+                            <option data-option="i" value="images/ITS_im_6.png">Chemicals and Related Products</option>
+                            <option data-option="i" value="images/ITS_im_7.png">Manifatured Goods Classified Chiefly by Material</option>
+                            <option data-option="i" value="images/ITS_im_8.png">Machinery and Transport Equipment</option>
+                            <option data-option="i" value="images/ITS_im_9.png">Miscellaneous Manufactured Articles</option>
+                            <option data-option="i" value="images/ITS_im_10.png">Others(Not classified)</option>
+                            <option data-option="e" value="images/ITS_im_1.png">Food and Live Animals</option>
+                            <option data-option="e" value="images/ITS_ex_2.png" >Beverage and Tobacco</option>
+                            <option data-option="e" value="images/ITS_ex_3.png">Crude Materials, Inedibles, Except Fuels</option>
+                            <option data-option="e" value="images/ITS_ex_4.png">Mineral Fuels, Lubricants and Other related Materials</option>
+                            <option data-option="e" value="images/ITS_ex_5.png">Animal and vegetable Oils, Fats and Waxes</option>
+                            <option data-option="e" value="images/ITS_ex_6.png">Chemicals and Related Products</option>
+                            <option data-option="e" value="images/ITS_ex_7.png">Manifatured Goods Classified Chiefly by Material</option>
+                            <option data-option="e" value="images/ITS_ex_8.png">Machinery and Transport Equipment</option>
+                            <option data-option="e" value="images/ITS_ex_9.png">Miscellaneous Manufactured Articles</option>
+                            <option data-option="e" value="images/ITS_ex_10.png">Others(Not classified)</option>
+                        </select>
+                        <div>
+                            <img style='height: 100%; width: 100%; object-fit: contain' id="imageToSwap3" class="profile" src="images/ITS_im_1.png">
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12  mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="ftco-heading heading-thin">Observation of Impact on Different Industries In a Quantified Way </h2>
+                            <p>
+                                <i>Click on the upper-left botton Exports/Imports to see individual sorting.</i>
+                            </p>
+                            
+                        </div>
+                    <div class="row" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-md-12 col-lg-12">
+                            <iframe name="mapiframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly/impact_industries.html" height="700" width="1100"></iframe>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-md-12 col-lg-12 mb-5">
+                            <p>
+                                The impact is almost mutually negative for different kinds of industries for either imports or exports. 
+
+                            </p>
+                            <p>
+                                <b>Comparing the impact over different industries</b>,
+                                 the most negative impact is on <b>animal and vegetable oils, fats and waxes</b> 
+                                 among both exports and imports, and for imports especially. 
+                                 The category <b>beverages and tobacco</b> has the least impact, for both exports and imports.
+                                 The extent of impact may have relations with the elasticity of goods. For example, 
+                                 The goods of inelastic demand may be less impacted. 
+                                 The the very small impact on <b>beverages and tobacco</b> may be because the U.S may have other alternative trading partners, 
+                                 such as Brazil...
+                                 Other factors, such as policy, big events, etc also accounts for this,
+                                 further study can be conducted.
+                            </p>
+                            <p>
+                                <b>Comparing impact on exports and imports</b>, the imports of the U.S is influenced more by the trade war than the exports.
+                            </p>
+                            <p>
+                                <b>Limitations: </b> First of all, more detailed classification of goods can be taken into consideration,
+                                such as the catogories of goods within the advanced-technical products are worth studying. 
+                                Besides, we could also study the change of trades with other partner countries for
+                                a certain industry, in order to better understand its extent of impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                
+            </div>
+        </section>
+        <!-- END section -->        
+
+        <div id="conclusion" class="ftco-section" style="background-color:#e6e2e0">
+            <div class="container">
+                <div class="row justify-content-center mb-5 pb-5">
+                    <div class="col-md-10 text-center"  data-aos="fade-up">
+                        <h1>Conclusion</h1>
+                        <p> 
+                            We mainly used interrupted time series (ITS) analysis to answer our question: to what extent has 
+                            the US-China trade war affected the exports and imports trades of these two countries? By splitting 
+                            the time period into two segments before and after the trade-war began and study the linear regression respectively, 
+                            we observe statistically obvious long-run impact. (indicated from the decrease in slope).
+                            Introduing the control group, we have concluded that although this decrease is not fully influenced 
+                            by the trade war, it does contribute a large part.
+                        </p>
+                        <p> 
+                            Moreover, we look further into details: the impact on different trade partners of the U.S and China,
+                            as well as the impact on different industries. And we get some interesting observations: the impact on other trading partners
+                            some are negative and some are positive. For almost every industry the impact is negative.
+                        </p>
+                        <p>
+                            Generally speaking, China and the U.S as two large economies in the world, the trade between them has indeed limited their bilateral trades
+                            and may even does harm to the global economy. For further study, more economic and social implications 
+                            is expected. And the result may become more precise if we extend the time period and could get more data in the future.
+                            Relations of trading partners in specific industry can be conducted to understand the impact.
+                            Apart from this, the impact on other aspects, such as cultural communication, social status as well as trades are also worth researching.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+            <div class="text-center">
+                <ul class="icons">
+                    <i><a href="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_lovela-data-science" class="fa fa-github" style="font-size:48px;"></a></i>
+                </ul>
+                <ul style="font-size: 12px">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy; 2020 All rights reserved | Template made by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </ul></div>
+        </footer>
+
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="js/google-map.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <script src="js/plots.js"></script>
+        <!--counter-->
+        <script src="js/jquery.counterup.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script>
+            jQuery(document).ready(function( $ )
+                                   {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 2000
+                });  
+            });
+        </script>
+        
+        <script>
+        function showUS() {
+          document.getElementById("genplot").innerHTML = '<img src = "images/us_trade_partner.png" alt="" style="width:100%">';
+        }
+        </script>
+
+        <script>
+        function showChina() {
+        document.getElementById("genplot").innerHTML = '<img src = "images/china_trade_partner.png" alt="" style="width:100%">';
+        }
+        </script>
+        <script>
+            function CHimpact() {
+            document.getElementById("impactplot").innerHTML = '<img src = "images/china_impact.png" alt="" style="width:100%">';
+            }
+            </script>
+
+        <script>
+            function USimpact() {
+            document.getElementById("impactplot").innerHTML = '<img src = "images/us_impact.png" alt="" style="width:100%">';
+            }
+        </script>
+
+
+        <script>
+            var sel1 = document.querySelector('#sel1');
+            var sel2 = document.querySelector('#sel2');
+            var options2 = sel2.querySelectorAll('option');
+            var sel3 = document.querySelector('#sel3');
+            var sel4 = document.querySelector('#sel4');
+            var options4 = sel4.querySelectorAll('option');
+            var sel5 = document.querySelector('#sel5');
+            var sel6 = document.querySelector('#sel6');
+            var options6 = sel6.querySelectorAll('option');
+
+            function giveSelection(selValue) {
+            sel2.innerHTML = '';
+            for(var i = 0; i < options2.length; i++) {
+                if(options2[i].dataset.option === selValue) {
+                sel2.appendChild(options2[i]);
+                }
+            }
+            }
+            function giveSelection2(selValue) {
+            sel4.innerHTML = '';
+            for(var i = 0; i < options4.length; i++) {
+                if(options4[i].dataset.option === selValue) {
+                sel4.appendChild(options4[i]);
+                }
+            }
+            }
+            function giveSelection3(selValue) {
+            sel6.innerHTML = '';
+            for(var i = 0; i < options6.length; i++) {
+                if(options6[i].dataset.option === selValue) {
+                sel6.appendChild(options6[i]);
+                }
+            }
+            }
+
+            giveSelection(sel1.value);
+            giveSelection(sel3.value);
+            giveSelection(sel5.value);
+        </script>
+        
+        
+        <script>
+        function showmar1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/24/.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showgen1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/5.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showcit1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/28.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showbir1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/30.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showocc1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/2.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showedu1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/26.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showeye1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/9.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showhair1() {
+          document.getElementById("goodbadplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/7.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        
+        
+        <script>
+        function showmar2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/52/.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showgen2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/54.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showcit2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/60.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showbir2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/50.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showocc2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/46.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showedu2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/48.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showeye2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/56.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script>
+        
+        <script>
+        function showhair2() {
+          document.getElementById("popplot").innerHTML = '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~pgaudill/58.embed?showlink=false&modebar=false" height="525" width="100%"></iframe>';
+        }
+        </script> 
+    
+        
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
